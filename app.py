@@ -18,7 +18,7 @@ app.add_middleware(
 # Cargar modelos
 modelos = {}
 try:
-    modelos['es'] = joblib.load("modelo_sentimiento_es.joblib")
+    modelos['es'] = joblib.load("model_es.joblib")
     modelos['en'] = joblib.load("model_en.joblib")
     modelos['pt'] = joblib.load("model_pt.joblib")
 except Exception as e:
